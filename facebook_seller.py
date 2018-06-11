@@ -11,7 +11,7 @@ while i < 100:
     time.sleep(2)
     pyautogui.click(x=433, y=889, clicks=1)  # click delete comment
     time.sleep(2)
-    pyautogui.click(x=697, y=532, clicks=1) # are I sure? Yes I'm sure...
+    pyautogui.click(x=697, y=532, clicks=1)  # are I sure? Yes I'm sure...
     time.sleep(2)
 
     # WRITE NEW COMMENT
