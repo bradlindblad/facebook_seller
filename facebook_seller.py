@@ -8,20 +8,21 @@ Returns:
 
 '''
 
-comment_elipses = [470, 814]
+import time
+import pyautogui
+
+comment_ellipses = [470, 814]
 delete_comment = [433, 889]
 im_sure = [697, 532]
 comment_box = [378, 814]
 
-import time
-import pyautogui
-
+# LOOP
 i = 0
 
 while i < 100:
     # DELETE OLD COMMENT
     time.sleep(2)
-    pyautogui.click(x=comment_elipses[0], y=comment_elipses[1], clicks=1)  # click the elipses next to comment
+    pyautogui.click(x=comment_ellipses[0], y=comment_ellipses[1], clicks=1)  # click the ellipses next to comment
     time.sleep(2)
     pyautogui.click(x=delete_comment[0], y=delete_comment[1], clicks=1)  # click delete comment
     time.sleep(2)
