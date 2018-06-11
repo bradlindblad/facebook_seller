@@ -1,16 +1,12 @@
-''' Info
-
-Args:
-    [1]
-    [2]
-
-Returns:
-
+'''
+Uses pyautogui module to click certain buttons on facebook post to keep
+it near the top of news feed.
 '''
 
 import time
 import pyautogui
 
+# X and Y coordinates of the screen positions
 comment_ellipses = [470, 814]
 delete_comment = [433, 889]
 im_sure = [697, 532]
