@@ -11,11 +11,13 @@ comment_ellipses = [470, 814]
 delete_comment = [433, 889]
 im_sure = [697, 532]
 comment_box = [378, 814]
+iterations = 2
+time_between = 0.2  # in minutes
 
 # LOOP
 i = 0
 
-while i < 100:
+while i < iterations:
     # DELETE OLD COMMENT
     time.sleep(2)
     pyautogui.click(x=comment_ellipses[0], y=comment_ellipses[1], clicks=1)  # click the ellipses next to comment
@@ -32,6 +34,8 @@ while i < 100:
     pyautogui.press('enter')
 
     # SLEEP
-    time.sleep(300)  # sleep for 5 minutes
+    time.sleep(time_between * 60)  # sleep for 5 minutes
 
     i = i + 1
+print("All done. Re-posted a comment", iterations, "times with a delay of ", time_between, " minutes.")
+
